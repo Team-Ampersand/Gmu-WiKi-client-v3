@@ -11,10 +11,10 @@ const Header = () => {
         <>
             <S.Header
                 onMouseEnter={() => {
-                    setShowMenu(true);
+                    setShowMenu(true)
                 }}
                 onMouseLeave={() => {
-                    setShowMenu(false);
+                    setShowMenu(false)
                 }}
             >
                 <S.MenuContainer>
@@ -46,14 +46,7 @@ const Header = () => {
                     <span>로그아웃</span>
                 </S.InfoContainer>
             </S.Header>
-            <DropMenu
-                onMouseEnter={() => {
-                    setShowMenu(true);
-                }}
-                onMouseLeave={() => {
-                    setShowMenu(false);
-                }}
-            />
+            {showMenu && <DropMenu onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)} />}
         </>
     )
 
