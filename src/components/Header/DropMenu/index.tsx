@@ -1,12 +1,8 @@
 import Link from "next/link";
 import * as S from './style';
+import { DropMenuPropsType } from "@/types/components/DropMenuPropsTypes";
 
-type Props = {
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
-}
-
-const DropMenu = ({ onMouseEnter, onMouseLeave }: Props) => {
+const DropMenu = ({ onMouseEnter, onMouseLeave }: DropMenuPropsType) => {
   return (
     <>
       <S.DropContainer onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
