@@ -11,10 +11,10 @@ const Header = () => {
         <>
             <S.Header
                 onMouseEnter={() => {
-                    setShowMenu(true)
+                    setShowMenu(true);
                 }}
                 onMouseLeave={() => {
-                    setShowMenu(false)
+                    setShowMenu(false);
                 }}
             >
                 <S.MenuContainer>
