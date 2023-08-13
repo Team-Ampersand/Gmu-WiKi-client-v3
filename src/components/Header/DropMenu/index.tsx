@@ -1,8 +1,8 @@
-import { DropmenuPropsType } from "@/types/components/DropMenuPropsType"
-import Link from "next/link"
-import * as S from './style'
+import Link from "next/link";
+import * as S from './style';
+import { DropMenuPropsType } from "@/types/components/DropMenuPropsType";
 
-const DropMenu = ({ onMouseEnter, onMouseLeave }: DropmenuPropsType) => {
+const DropMenu = ({ onMouseEnter, onMouseLeave }: DropMenuPropsType) => {
   return (
     <>
       <S.DropContainer onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>

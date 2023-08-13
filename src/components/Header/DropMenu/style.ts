@@ -5,12 +5,11 @@ export const DropContainer = styled.div`
   background-color: #3e9dff;
   height: auto;
   color: #fff;
-  padding-left: 15vw;
+  padding-left: 18vw;
   padding-bottom: 2vw;
   position: absolute;
   z-index: 999;
 `
-
 export const DropMenu = styled.div`
   display: flex;
   gap: 3.7vw;
