@@ -2,7 +2,7 @@ import axios from 'axios';
 import EnvConfig from './EnvConfig';
 
 const API = axios.create({
-    baseURL:'https://server.gmuwiki.com/',
+    baseURL: EnvConfig.GMUWIKI_SERVER_URL,
     withCredentials: true
 });
 
