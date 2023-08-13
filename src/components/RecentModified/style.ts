@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled'
 
 export const RecentModifiedContainer = styled.div`
   position: sticky;
@@ -12,7 +12,7 @@ export const RecentModifiedContainer = styled.div`
   @media screen and (max-width: 1000px) {
     display: none;
   }
-`;
+`
 
 export const Title = styled.div`
   color: #ffffff;
@@ -22,7 +22,7 @@ export const Title = styled.div`
   height: 5vh;
   font-size: 1.2rem;
   padding-left: 22px;
-`;
+`
 
 export const ModifiedItem = styled.div`
   width: 15vw;
@@ -35,7 +35,7 @@ export const ModifiedItem = styled.div`
   border: solid 1px #c0c0c0;
   border-top: none;
   cursor: pointer;
-`;
+`
 
 export const ModifiedItemTitle = styled.h3`
   font-size: 1rem;
@@ -54,9 +54,9 @@ export const ModifiedItemTitle = styled.h3`
   @media screen and (max-width: 1200px) {
     font-size: 0.4rem;
   }
-`;
+`
 
 export const ModifiedItemTime = styled.p`
   font-size: 0.8rem;
   color: #999999;
-`;
+`
