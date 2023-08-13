@@ -1,8 +1,8 @@
 import Link from "next/link";
 import * as S from './style';
-import { DropMenuPropsType } from "@/types/components/DropMenuPropsTypes";
+import { DropmenuPropsType } from "@/types/components/DropMenuPropsTypes";
 
-const DropMenu = ({ onMouseEnter, onMouseLeave }: DropMenuPropsType) => {
+const DropMenu = ({ onMouseEnter, onMouseLeave }: DropmenuPropsType) => {
   return (
     <>
       <S.DropContainer onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -14,7 +14,6 @@ const DropMenu = ({ onMouseEnter, onMouseLeave }: DropMenuPropsType) => {
             <Link href="/inquiryWrite">
               <span>문의</span>
             </Link>
-
           </S.DropItem>
           <S.DropItem>
             <Link href="/student">

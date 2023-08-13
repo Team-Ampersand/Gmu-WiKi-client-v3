@@ -1,4 +1,4 @@
-export interface DropMenuPropsType {
+export interface DropmenuPropsType {
   onMouseEnter: () => void
   onMouseLeave: () => void
 }

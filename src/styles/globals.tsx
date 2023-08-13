@@ -2,7 +2,7 @@ import { Global, css } from '@emotion/react';
 
 const style = css`
 
-    @font-face {
+@font-face {
   font-family: 'Pretendard';
   font-weight: 900;
   font-display: swap;
@@ -82,102 +82,10 @@ const style = css`
     url('/fonts/woff2/Pretendard-Thin.woff2') format('woff2'),
     url('/fonts/woff/Pretendard-Thin.woff') format('woff');
 }
-
-  details {
-    width: 100%;
-    margin: 60px 0;
-  }
-
-  .markdownConverter details {
-    margin: 0;
-  }
-
-  details summary {
-  font-weight: 600;
-  font-size: 1.5rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: #a3a3a3;
-  display: flex;
-  align-items: center;
-}
-
-details[open] summary {
-  font-weight: 600;
-  font-size: 1.5rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: #191919;
-}
-
-
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Pretendard;
-  }
-
-  body {
-    background-color: #F1F1F5;
-  }
-
-  body::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    height: 30%;
-    background: #7f7f7f;
-    border-radius: 10px;
-  }
-
-  blockquote {
-    display: inline-block;
-    border-left: 8px solid #007eff;
-    background-color: #f5f5f5;
-    padding: 18px;
-    margin: 10px 0;
-    font-size: 0.9rem;
-  }
-
-  pre {
-    display: inline-block;
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 4px;
-  }
-
-  code {
-    color: #333;
-  }
-
-  a {
-    text-decoration: none;
-    color: #007eff;
-  }
-
-  hr {
-    margin: 20px 0;
-    width: 100%;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  img {
-    max-width: 100vw;
-    max-height: 80vh;
-    object-fit: cover;
-  }
-
 `
 
 const Globalstyle = () => {
-    return <Global styles={style} />
+  return <Global styles={style} />
 }
 
 export default Globalstyle;

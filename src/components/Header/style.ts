@@ -69,6 +69,7 @@ export const SearchInput = styled.input`
   border: none;
   padding-left: 16px;
 `
+
 export const SearchIcon = styled.div`
   display: flex;
   align-items: center;

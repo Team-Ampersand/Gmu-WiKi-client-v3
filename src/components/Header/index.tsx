@@ -1,8 +1,8 @@
-import { useState } from "react";
-import * as S from './style'
 import { Etc, Logo, Notice, School, Search } from "@/assets/svg";
 import Link from "next/link";
+import { useState } from "react";
 import DropMenu from "./DropMenu";
+import * as S from './style';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState<Boolean>(false);
@@ -46,7 +46,9 @@ const Header = () => {
                     <span>로그아웃</span>
                 </S.InfoContainer>
             </S.Header>
-            {showMenu && <DropMenu onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)} />}
+            {showMenu &&
+                (<DropMenu onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)} />)
+            }
         </>
     )
 
