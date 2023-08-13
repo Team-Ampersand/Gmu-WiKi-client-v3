@@ -55,7 +55,6 @@ export const SearchContainer = styled.div`
   display: flex;
   border: 1px solid #c0c0c0;
   cursor: pointer;
-
   @media screen and (max-width: 700px) {
     display: none;
   }
@@ -78,7 +77,6 @@ export const SearchIcon = styled.div`
   height: 30px;
   background-color: #fff;
   border-left: 1px solid #c0c0c0;
-
   svg {
     width: 16px;
     height: 16px;

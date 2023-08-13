@@ -1,6 +1,6 @@
-import Link from "next/link";
-import * as S from './style';
-import { DropmenuPropsType } from "@/types/components/DropMenuPropsTypes";
+import { DropmenuPropsType } from "@/types/components/DropMenuPropsType"
+import Link from "next/link"
+import * as S from './style'
 
 const DropMenu = ({ onMouseEnter, onMouseLeave }: DropmenuPropsType) => {
   return (
@@ -14,6 +14,7 @@ const DropMenu = ({ onMouseEnter, onMouseLeave }: DropmenuPropsType) => {
             <Link href="/inquiryWrite">
               <span>문의</span>
             </Link>
+
           </S.DropItem>
           <S.DropItem>
             <Link href="/student">

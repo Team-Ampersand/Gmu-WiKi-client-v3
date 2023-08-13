@@ -1,3 +1,3 @@
 export type SEOPropsType = {
-  title: string
+  title?: string
 }
