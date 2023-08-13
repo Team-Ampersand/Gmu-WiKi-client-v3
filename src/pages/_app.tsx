@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Globalstyle from '@/styles/globals'
 import '@/styles/globals.tsx'
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header />
       <Globalstyle />
       <Component {...pageProps} />
+      <Footer />
     </RecoilRoot>
   )
 }
