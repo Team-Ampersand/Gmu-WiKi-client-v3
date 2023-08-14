@@ -41,6 +41,11 @@ export const ModifiedItemTitle = styled.h3`
   font-size: 1rem;
   font-weight: 600;
   padding: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  max-width : 60%;
   color: #191919;
 
   @media screen and (max-width: 1600px) {
