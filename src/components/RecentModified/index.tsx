@@ -61,7 +61,7 @@ const dummy_data = [
   },
   {
     id: 12,
-    title: '글12',
+    title: '주미야바꾸고있어주미야바꾸고있어주미야',
     editedDate: '2023-07-17T12:07:40.501817',
   },
 ]
@@ -106,7 +106,7 @@ export default function RecentModified() {
         <React.Fragment key={id}>
           <S.ModifiedItem onClick={() => handleBoardItemClick(id)}>
             <S.ModifiedItemTitle>
-              {title.length > 9 ? title.substr(0, 9) + '...' : title}
+              {title}
             </S.ModifiedItemTitle>
             <S.ModifiedItemTime>{formatTime(editedDate)}</S.ModifiedItemTime>
           </S.ModifiedItem>
