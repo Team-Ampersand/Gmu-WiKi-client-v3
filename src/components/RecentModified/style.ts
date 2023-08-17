@@ -29,8 +29,8 @@ export const ModifiedItem = styled.div`
   height: 4.5vh;
   background-color: #ffffff;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   padding: 0 22px;
   border: solid 1px #c0c0c0;
   border-top: none;
@@ -41,12 +41,11 @@ export const ModifiedItemTitle = styled.h3`
   font-size: 1rem;
   font-weight: 600;
   padding: 4px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: break-all;
-  max-width : 60%;
   color: #191919;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
 
   @media screen and (max-width: 1600px) {
     font-size: 0.8rem;
@@ -63,5 +62,14 @@ export const ModifiedItemTitle = styled.h3`
 
 export const ModifiedItemTime = styled.p`
   font-size: 0.8rem;
+  white-space: nowrap;
   color: #999999;
+
+  @media screen and (max-width: 1450px) {
+    font-size: 0.7rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 0.4rem;
+  }
 `
