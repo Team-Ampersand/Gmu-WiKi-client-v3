@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useFetch } from '../../hooks'
 import * as S from './style'
 import { RecentListType } from '@/types/components/RecentListType'
-
 const dummy_data = [
   {
     id: 1,
@@ -95,7 +94,7 @@ export default function RecentModified() {
   }
 
   const handleBoardItemClick = (boardId: number) => {
-    const boardUrl = `/${roleUrl}/board/${boardId}`
+    const boardUrl = `/board/${boardId}`
     window.location.href = boardUrl
   }
 
