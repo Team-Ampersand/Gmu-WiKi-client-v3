@@ -1,35 +1,29 @@
 import * as S from './style'
 import {
-  WriteCategoryData,
-  WriteCategory,
-  detailCategory,
+  WriteCategoryData
 } from '@/assets/data/WriteCategoryData'
 
 type EditWritePropsTypes = {
-  onChange: (e: any) => void
   type: string
   category: string
   detailCategory: string
   title: string
+  handleSelectChange: (e:React.ChangeEvent<HTMLSelectElement>) => void
 }
 function EditWrite({
-  onChange,
   type,
   category,
   detailCategory,
+  handleSelectChange
 }: EditWritePropsTypes) {
-    const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const { name, value } = e.target;
-        onChange({ [name]: value });
-      };
-
+   const role = "관리자";
 
   return (
     <S.EditWriteContainer>
       <S.CategoryInputBox type={type}>
         <select name='category' onChange={handleSelectChange} value={category}>
           {
-            WriteCategoryData.writeCategory.map((item) => (
+            WriteCategoryData.writeCategory.filter((i)=>i.user.includes(role)).map((item) => (
                 <option key={item.value} value={item.value}>
               {item.name}
             </option>
@@ -38,7 +32,7 @@ function EditWrite({
         </select>
         <select
           name='detailCategory'
-          onChange={onChange}
+          onChange={handleSelectChange}
           value={detailCategory}
         >
           {WriteCategoryData.detailCategory.filter((i)=>i.parent===category).map((item) => (

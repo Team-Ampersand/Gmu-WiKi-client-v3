@@ -11,15 +11,20 @@ function WriteBox(){
             ...categoryData,
             ...changedData
         });
+        console.log(categoryData)
     }
+    const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const { name, value } = e.target;
+        onChange({ [name]: value });
+      };
     return(
     <S.WriteBoxContainer>
         <EditWrite 
-        onChange={onChange}
         type="글쓰기"
         category={category}
         detailCategory={detailCategory}
         title={title}
+        handleSelectChange={handleSelectChange}
         />
     </S.WriteBoxContainer>
     );

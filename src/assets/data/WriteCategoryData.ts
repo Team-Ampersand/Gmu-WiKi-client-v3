@@ -1,6 +1,12 @@
+export interface noticeCategory {
+  name: string
+  value: string
+}
+
 export interface WriteCategory {
   name: string
   value: string
+  user: string
 }
 
 export interface detailCategory {
@@ -10,7 +16,7 @@ export interface detailCategory {
 }
 
 export interface WriteCategoryDataType  {
-  noticeCategory: WriteCategory[]
+  noticeCategory: noticeCategory[]
   writeCategory: WriteCategory[]
   detailCategory: detailCategory[]
 }
@@ -20,6 +26,7 @@ export const WriteCategoryData: WriteCategoryDataType = {
     {
       name: '선택해주세요',
       value: 'select',
+      
     },
     {
       name: '삭제요청',
@@ -38,30 +45,37 @@ export const WriteCategoryData: WriteCategoryDataType = {
     {
       name: '선택해주세요',
       value: 'select',
+      user: '사용자관리자',
     },
     {
       name: '학생',
       value: 'STUDENT',
+      user: '관리자',
     },
     {
       name: '선생님',
       value: 'TEACHER',
+      user: '관리자',
     },
     {
       name: '전공',
       value: 'MAJOR',
+      user: '관리자',
     },
     {
       name: '동아리',
       value: 'CLUB',
+      user: '사용자관리자',
     },
     {
       name: '사건',
       value: 'INCIDENT',
+      user: '사용자관리자',
     },
     {
       name: '학사일정',
       value: 'SCHEDULE',
+      user: '관리자',
     },
   ],
   detailCategory: [
